@@ -1,0 +1,15 @@
+{
+  "name": "lesson4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dalsian",
+  "license": "ISC",
+  "dependencies": {
+    "@reactivex/rxjs": "^5.5.8",
+    "rxjs": "^6.0.0-beta.4"
+  }
+}
