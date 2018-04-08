@@ -13,7 +13,7 @@ router.post('/', function(req, res, next) {
     next();
 },function(req,res,next){
     const addr = req.body.txtEmail;
-    req.assert(addr, 'Please enter a valid email address').notEmpty().isEmail();
+    req.assert('txtEmail', 'Please enter a valid email address').notEmpty().isEmail();
     var errors = req.validationErrors();
     if(errors) {
         return res.render('newsletters',{title:'Newsletter Subscription',
