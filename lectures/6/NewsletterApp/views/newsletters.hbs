@@ -1,0 +1,14 @@
+<h2>{{title}}</h2>
+<form method="POST">
+<div>
+    <input type="text" name="txtEmail" placeholder="abc@mail.com" />
+    <input type="submit" value="Subscribe" />
+    <ul class="error">
+        {{#each errors}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    
+</div>
+    <input type="hidden" name="_csrf" value="{{csrftoken}}" />
+</form>
