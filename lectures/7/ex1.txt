@@ -1,0 +1,11 @@
+Database created online at mongoDB Atlas. 
+Please use username: guest and password: guest for access.
+
+For accessing from shell 
+========================
+mongo "mongodb+srv://cluster0-twzyw.mongodb.net/test" --username guest
+
+
+For accessing from compass 1.2+ 
+================================
+mongodb+srv://guest:guest@cluster0-twzyw.mongodb.net/test

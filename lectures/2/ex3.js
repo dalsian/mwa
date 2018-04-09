@@ -1,6 +1,7 @@
 //Ex3
 function slow(callback) {
-    setTimeout(() => {for(let i = 0; i <= 5e8; i++) {} console.log("Loop done.");}, 10);//prevent blocking
+    setImmediate(() => {for(let i = 0; i <= 5e2; i++) {console.log(i);} 
+                        console.log("Loop done.");});//prevent blocking
     
     if (Math.random() > 0.5) {
         //this will call back asynchronously upon error.
