@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
               res.render('secret', { title: 'Secret Page' , 
                       message : decrypted});
               
-              client.close;
+              client.close();
             });
     });
 });
