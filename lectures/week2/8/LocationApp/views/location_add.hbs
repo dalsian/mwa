@@ -1,0 +1,29 @@
+<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/jquery-gmaps-latlon-picker.css"/>
+<script src="/javascripts/jquery-gmaps-latlon-picker.js"></script>
+<h1>{{title}}</h1>
+<form action="add" method="POST">
+<label>
+    Location Name :
+    <input type="text" name="txtLocName" id="txtLocName" />
+</label>
+<label>
+    Category :
+    <input type="text" name="txtLocCat" id="txtLocCat" />
+</label>
+Select Location:
+<fieldset class="gllpLatlonPicker">
+    <!--
+    <input type="text" class="gllpSearchField">
+    <input type="button" class="gllpSearchButton" value="search">
+    -->
+	<div class="gllpMap">Google Maps</div>
+	<input type="hidden" class="gllpLatitude" value="41.0180842" name="lat" id="lat"/>
+	<input type="hidden" class="gllpLongitude" value="-91.9681321" name="lon" id="lon"/>
+	<input type="hidden" class="gllpZoom" value="10"/>
+</fieldset>
+<input type="submit" value="Add" />
+</form>
+
+
