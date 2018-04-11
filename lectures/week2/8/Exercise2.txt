@@ -1,0 +1,2 @@
+Suggested using composite index on (ISBN,Author).
+ISBN first because it has wide variety of data, thus the indexes spread more.
