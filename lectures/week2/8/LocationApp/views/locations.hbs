@@ -6,6 +6,7 @@
         <th>Category</th>
         <th>Longitude</th>
         <th>Latitude</th>
+        <th></th>
     </tr>
     {{#each locations}}
         <tr>
@@ -13,6 +14,7 @@
             <td>{{category}}</td>
             <td>{{map.coordinates.[0]}}</td>
             <td>{{map.coordinates.[1]}}</td>
+            <td></td>
         </tr>
     {{/each}}
 </table>

@@ -87,4 +87,8 @@ router.post('/add', function(req,res,next) {
   });
 });
 
+router.delete("/", (req,res,next) =>{
+  
+});
+
 module.exports = router;
