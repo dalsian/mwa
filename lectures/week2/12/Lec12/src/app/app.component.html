@@ -21,6 +21,11 @@
   </li>
 </ul>
 -->
-<div style="text-align:center; padding-top: 200px;">
-<app-counter></app-counter>
+<div style="text-align:center;">
+  <span style="width: 300px; position: relative;  
+              margin-top: 200px;padding:80px;border:1px solid green;
+              top: 200px; left:auto; right:auto;">
+  <app-counter counter="{{ComponentCounterValue}}" (counterChange)="counterChange($event)"></app-counter>
+  <p style="position: absolute; bottom: 0px; right:5px;">Component Counter Value = {{ComponentCounterValue}}</p>
+  </span>
 </div>
